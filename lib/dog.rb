@@ -47,7 +47,6 @@ class Dog
     #DB[:conn].execute(sql, self.name).map do |row|
     #  self.new_from_db(row)
     #end
-
   end
 
   def save
