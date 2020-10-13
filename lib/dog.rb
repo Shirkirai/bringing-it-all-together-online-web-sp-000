@@ -95,6 +95,8 @@ class Dog
       SQL
       DB[:conn].execute(sql, name, breed).map do |row|
         self.create(row)
+      end
+    end
 
 
   end
