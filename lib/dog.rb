@@ -27,6 +27,15 @@ class Dog
     SQL
     DB[:conn].execute(sql)
   end
+  
+  def self.new_from_db(row)
+    #binding.pry
+    id = row[0]
+    name = row[1]
+    breed = row[2]
+    self.new(id, name, breed)
+
+  end
 
   def save
     if self.id
@@ -40,7 +49,7 @@ class Dog
       saved_dog = DB[:conn].execute(sql, self.name, self.breed)
     #binding.pry
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
-      
+
     end
 
   end
@@ -56,13 +65,6 @@ class Dog
     new_dog
   end
 
-  def self.new_from_db(row)
-    #binding.pry
-    id = row[0]
-    name = row[1]
-    breed = row[2]
-    self.new(id, name, breed)
 
-  end
 
 end
