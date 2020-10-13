@@ -86,10 +86,11 @@ class Dog
   end
 
   def self.find_or_create_by(attributes)
+    bindin.gpry
     if self.find_by_name(name)
       self.find_by_name(name)
     else
-      
+
   end
 
 
