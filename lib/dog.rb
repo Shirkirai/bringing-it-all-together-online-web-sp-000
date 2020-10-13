@@ -27,14 +27,13 @@ class Dog
     SQL
     DB[:conn].execute(sql)
   end
-  
+
   def self.new_from_db(row)
     #binding.pry
     id = row[0]
     name = row[1]
     breed = row[2]
     self.new(id, name, breed)
-
   end
 
   def save
