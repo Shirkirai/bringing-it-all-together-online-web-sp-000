@@ -29,7 +29,7 @@ class Dog
   end
 
   def save
-    if id
+    if self.id
       self.update
     else
 
