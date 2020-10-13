@@ -44,9 +44,9 @@ class Dog
     LIMIT = 1
     SQL
     binding.pry
-    #DB[:conn].execute(sql, self.name).map do |row|
-    #  self.new_from_db(row)
-    #end
+    DB[:conn].execute(sql, self.name).map do |row|
+      self.new_from_db(row)
+    end
   end
 
   def save
