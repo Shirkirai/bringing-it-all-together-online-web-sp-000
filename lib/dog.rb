@@ -86,7 +86,7 @@ class Dog
   end
 
   def self.find_or_create_by(attributes)
-    binding.pry
+    
   end
 
 
