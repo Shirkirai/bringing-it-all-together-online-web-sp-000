@@ -1,4 +1,4 @@
-earnrequire "spec_helper"
+require "spec_helper"
 require 'pry'
 
 describe "Dog" do
