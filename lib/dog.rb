@@ -87,6 +87,14 @@ class Dog
 
   def self.find_or_create_by(name:, breed:)
     binding.pry
+    if self.find_by_name(name)
+      self.update
+    else
+      sql = <<-SQL
+      SELECT * FROM dogs WHERE name = ?, breed = ?
+      SQL
+      DB[:conn].execute(sql, name, breed).map do |row|
+        self.create(row)
 
 
   end
