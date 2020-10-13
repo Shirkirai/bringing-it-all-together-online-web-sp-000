@@ -96,7 +96,7 @@ class Dog
     if dog
       new_pup = self.new_from_db(dog)
     else
-      new_pup = self.create(dog)
+      new_pup = self.create(name: name, breed: breed)
     end
     new_pup
   end
