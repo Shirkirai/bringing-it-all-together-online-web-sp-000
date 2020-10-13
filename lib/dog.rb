@@ -86,7 +86,7 @@ class Dog
   end
 
   def self.find_or_create_by(attributes)
-    bindin.gpry
+    binding.pry
     if self.find_by_name(name)
       self.find_by_name(name)
     else
