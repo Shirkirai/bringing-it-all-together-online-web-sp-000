@@ -90,11 +90,11 @@ class Dog
       sql = <<-SQL
       SELECT * FROM dogs WHERE name = ?, breed = ?
       SQL
-      
+
       dog = DB[:conn].execute(sql, name, breed).first
 
       
-        
+
 
 
   end
