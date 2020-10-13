@@ -91,7 +91,7 @@ class Dog
     SELECT * FROM dogs WHERE name = ? AND breed = ?
     SQL
 
-    dog = DB[:conn].execute(sql,name, breed).first
+    dog = DB[:conn].execute(sql, name, breed).first
 
 
 
