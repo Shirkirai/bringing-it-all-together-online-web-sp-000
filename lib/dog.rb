@@ -41,6 +41,7 @@ class Dog
     SELECT name
     FROM dogs
     WHERE name = ?
+    LIMIT = 1
     SQL
   end
 
