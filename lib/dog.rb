@@ -93,7 +93,7 @@ class Dog
 
       dog = DB[:conn].execute(sql, name, breed).first
 
-      
+
 
 
 
