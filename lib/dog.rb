@@ -54,8 +54,7 @@ class Dog
       self.update
     else
       sql = <<-SQL
-      INSERT INTO dogs (name, breed)
-      VALUES (?, ?)
+      INSERT INTO dogs (name, breed) VALUES (?, ?)
       SQL
 
       saved_dog = DB[:conn].execute(sql, self.name, self.breed)
