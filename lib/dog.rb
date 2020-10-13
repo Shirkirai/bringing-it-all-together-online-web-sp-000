@@ -37,7 +37,7 @@ class Dog
   end
 
   def self.find_by_name
-    
+    binding.pry
   end
 
   #def save
