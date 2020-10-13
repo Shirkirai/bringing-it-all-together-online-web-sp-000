@@ -97,6 +97,7 @@ class Dog
       new_pup = self.new_from_db(dog)
     else
       new_pup = self.create(dog)
+    end
 
 
 
