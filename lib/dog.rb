@@ -85,7 +85,8 @@ class Dog
     end.first
   end
 
-  def self.find_or_create_by(attributes)
+  def self.find_or_create_by()
+    if self.find_by_id()
   end
 
 
