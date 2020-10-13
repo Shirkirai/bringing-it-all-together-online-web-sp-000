@@ -98,6 +98,7 @@ class Dog
     else
       new_pup = self.create(dog)
     end
+    new_pup
   end
 
 end
