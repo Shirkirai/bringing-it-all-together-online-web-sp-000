@@ -35,7 +35,7 @@ class Dog
     breed = row[2]
     self.new(id: id, name: name, breed: breed)
   end
-
+  binding.pry
   def self.find_by_name(name)
     sql =  <<-SQL
     SELECT *
