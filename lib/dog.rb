@@ -87,9 +87,7 @@ class Dog
 
   def self.find_or_create_by(attributes)
     binding.pry
-    if self.find_by_name(name)
-      self.find_by_name(name)
-    else
+  
 
   end
 
